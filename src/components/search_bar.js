@@ -1,22 +1,30 @@
-import React from 'react';
+import React, {Component} from 'react';
+// import PropTypes from 'prop-types';
 
-class SearchBar extends React.Component {
-    constructor(props) {
-        super(props);
+class SearchBar extends Component {
 
-        this.state = { term: '' };
+    state = {term: ''}
+
+    handleChange(term) {
+      this.setState({term})
+      this.props.onSearchTermChange(term)
     }
+
 
     render() {
         return (
-            <div>
+            <div className='search-bar'>
                 <input
-                    value={this.state.term}
-                    onChange={event => this.setState({ term: event.target.value })} />
-                {/*Value of the input: { this.state.term }*/}
+                    value = {this.state.term}
+                    onChange={e => this.handleChange(e.target.value)} />
             </div>
         );
     }
+
+
 }
 
+// SearchBar.propTypes = {};
+
 export default SearchBar;
+
