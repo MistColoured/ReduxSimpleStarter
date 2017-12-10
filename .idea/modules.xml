@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ReduxSimpleStarter.iml" filepath="$PROJECT_DIR$/.idea/ReduxSimpleStarter.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mist-tube.iml" filepath="$PROJECT_DIR$/.idea/mist-tube.iml" />
     </modules>
   </component>
